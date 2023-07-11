@@ -1,0 +1,38 @@
+{
+  "name": "react-tailwind-component",
+  "version": "0.0.1",
+  "description": "A simple template for a custom React component library",
+  "scripts": {
+    "build": "rollup --config",
+    "prebuild": "rimraf dist"
+  },
+  "author": "Emot",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@types/react": "^18.2.14",
+    "@types/react-dom": "^18.2.6",
+    "autoprefixer": "^10.4.14",
+    "class-variance-authority": "^0.6.1",
+    "postcss": "^8.4.25",
+    "postcss-import": "^15.1.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^5.0.1",
+    "rollup": "^3.26.2",
+    "rollup-plugin-dts": "^5.3.0",
+    "rollup-plugin-postcss": "^4.0.2",
+    "tailwind-merge": "^1.13.2",
+    "tailwindcss": "^3.3.2",
+    "tslib": "^2.6.0",
+    "typescript": "^5.0.2"
+  },
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts"
+}
