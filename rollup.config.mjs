@@ -24,8 +24,6 @@ export default [
     plugins: [
       postcss({
         extensions: [".css"],
-        extract: true,
-        modules: true,
         config: {
           path: "./postcss.config.js",
         },
