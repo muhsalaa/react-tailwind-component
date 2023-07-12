@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/muhsalaa"
   },
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A simple template for a custom React component library",
   "scripts": {
     "build": "rollup --config",
@@ -18,7 +18,6 @@
     "@types/react": "^18.2.14",
     "@types/react-dom": "^18.2.6",
     "autoprefixer": "^10.4.14",
-    "class-variance-authority": "^0.6.1",
     "postcss": "^8.4.25",
     "postcss-import": "^15.1.0",
     "react": "^18.2.0",
@@ -38,7 +37,7 @@
     "dist"
   ],
   "types": "dist/index.d.ts",
-  "peerDependencies": {
+  "dependencies": {
     "class-variance-authority": "^0.6.1"
   }
 }
