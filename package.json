@@ -3,7 +3,7 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/muhsalaa"
   },
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "A simple template for a custom React component library",
   "scripts": {
     "build": "rollup --config",
@@ -37,5 +37,8 @@
   "files": [
     "dist"
   ],
-  "types": "dist/index.d.ts"
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "class-variance-authority": "^0.6.1"
+  }
 }
