@@ -22,13 +22,6 @@ export default [
       },
     ],
     plugins: [
-      postcss({
-        extensions: [".css"],
-        config: {
-          path: "./postcss.config.js",
-        },
-        extract: true,
-      }),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
@@ -38,6 +31,12 @@ export default [
     input: "dist/esm/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.(css|less|scss)$/],
+    // treat css file extension as external and no need to be resolved
+    // external: [/\.(css|less|scss)$/],
+  },
+  {
+    input: "dist/esm/types/plugins/index.d.ts",
+    output: [{ file: "dist/plugins/index.d.ts", format: "esm" }],
+    plugins: [dts()],
   },
 ];
