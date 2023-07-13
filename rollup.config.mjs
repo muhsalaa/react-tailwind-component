@@ -34,9 +34,4 @@ export default [
     // treat css file extension as external and no need to be resolved
     // external: [/\.(css|less|scss)$/],
   },
-  {
-    input: "dist/esm/types/plugins/index.d.ts",
-    output: [{ file: "dist/plugins.d.ts", format: "esm" }],
-    plugins: [dts()],
-  },
 ];
